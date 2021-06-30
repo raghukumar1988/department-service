@@ -20,7 +20,7 @@ public class DepartmentController {
        return departmentService.saveDepartment(department);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{departmentId}")
     public Department getDepartmentById(@PathVariable Long  departmentId){
         log.info("Inside getDepartmentById method of DepartmentController..");
         return departmentService.getDepartmentById(departmentId);
